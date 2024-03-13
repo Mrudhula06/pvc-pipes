@@ -1,13 +1,18 @@
-import { useState } from 'react'
-import Home from './Components/Home'
+import { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./Components/Home";
+import Nav from "./Components/Nav";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <Home />
-  )
+    <Router>
+      <Nav />
+      <Home />
+    </Router>
+  );
 }
 
-export default App
+export default App;
