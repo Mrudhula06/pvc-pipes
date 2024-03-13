@@ -44,8 +44,8 @@ const Nav = () => {
           <HiMenuAlt1 onClick={handleToggle} size={30} className='text-black cursor-pointer' />
         </div>
         <div className="hidden lg:flex space-x-2">
-          <Link onClick={()=>closeMenu('home')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">Home</Link>
-          <Link onClick={()=>closeMenu('about')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">About</Link>
+          <Link to="/" onClick={()=>closeMenu('/')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">Home</Link>
+          <Link to="/about" onClick={()=>closeMenu('/about')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">About</Link>
           <Link onClick={()=>closeMenu('details')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">Details</Link>
           <Link onClick={()=>closeMenu('projects')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">Projects</Link>
           <Link onClick={()=>closeMenu('contact')} className="text-black hover:bg-green-200 hover:border-b-2 border-black rounded-full px-5 py-2 text-xl">Contact</Link>
@@ -55,10 +55,10 @@ const Nav = () => {
          <div className='lg:hidden'>
   <ul>
     <li className='text-black text-xl mb-2 cursor-pointer text-center hover:bg-green-200 hover:border-b-2'>
-      <Link onClick={() => closeMenu('home')}>Home</Link>
+      <Link to="/" onClick={() => closeMenu('/')}>Home</Link>
     </li>
     <li className='text-black text-xl mb-2 cursor-pointer text-center hover:bg-green-200 hover:border-b-2'>
-      <Link onClick={() => closeMenu('about')}>About</Link>
+      <Link to="/about" onClick={() => closeMenu('/about')}>About</Link>
     </li>
     <li className='text-black text-xl mb-2 cursor-pointer text-center hover:bg-green-200 hover:border-b-2'>
       <Link onClick={() => closeMenu('details')}>Details</Link>
